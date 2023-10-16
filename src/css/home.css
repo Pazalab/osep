@@ -1,0 +1,53 @@
+.hero-section{
+    height: 90vh;
+    position: relative;
+    width: 100%;
+}
+.hero-section .hero-slide-moja{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      transition: clip 0.8s ease-in-out;
+      -webkit-transition: clip 0.8s ease-in-out;
+      -moz-transition: clip 0.8s ease-in-out;
+      -ms-transition: clip 0.8s ease-in-out;
+      -o-transition: clip 0.8s ease-in-out;
+      clip: rect(0, 100vw, 90vh, 100vw);
+}
+
+.hero-slide-moja:nth-child(1){
+       background: url('../assets/hero1.jpg');
+       background-size: cover;
+       background-position: center;
+}
+.hero-slide-moja:nth-child(2){
+    background: url('../assets/hero2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.hero-slide-moja:nth-child(3){
+    background: url('../assets/hero3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-slide-moja.active{
+    z-index: 1;
+    clip: rect(0, 100vw, 90vh, 0);
+}
+.hero-slide-moja.prev {
+    clip: rect(0, 0, 100vh, 0);
+}
+
+.hero-slide-texts{
+      width: 700px;
+}
+.hero-slide-texts h1{
+    font-family: var(--bold-font);
+    font-size: 5.75rem;
+    font-weight: 600;
+    line-height: 6.25rem;
+}
