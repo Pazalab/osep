@@ -1,5 +1,5 @@
 .hero-section{
-    height: 90vh;
+    height: 100vh;
     position: relative;
     width: 100%;
 }
@@ -15,11 +15,12 @@
       -moz-transition: clip 0.8s ease-in-out;
       -ms-transition: clip 0.8s ease-in-out;
       -o-transition: clip 0.8s ease-in-out;
-      clip: rect(0, 100vw, 90vh, 100vw);
+      clip: rect(0, 100vw, 100vh, 100vw);
+      padding-top: 6rem;
 }
 
 .hero-slide-moja:nth-child(1){
-       background: url('../assets/hero1.jpg');
+       background: linear-gradient(to right, rgba(0, 30, 7, 0.6), transparent), url('../assets/hero1.jpg');
        background-size: cover;
        background-position: center;
 }
@@ -36,7 +37,7 @@
 
 .hero-slide-moja.active{
     z-index: 1;
-    clip: rect(0, 100vw, 90vh, 0);
+    clip: rect(0, 100vw, 100vh, 0);
 }
 .hero-slide-moja.prev {
     clip: rect(0, 0, 100vh, 0);
@@ -44,10 +45,65 @@
 
 .hero-slide-texts{
       width: 700px;
+      color: whitesmoke;
+}
+.hero-slide-texts h3{
+       text-transform: uppercase;
+       font-size: 18px;
+       display: flex;
+       align-items: center;
+       gap: 5px;;
 }
 .hero-slide-texts h1{
     font-family: var(--bold-font);
     font-size: 5.75rem;
     font-weight: 600;
     line-height: 6.25rem;
+    margin-bottom: 20px;
+}
+.hero-slide-texts p{
+     font-size: 18px;
+     line-height: 32px;
+}
+
+.action-btn a{
+      width: 180px;
+      display: flex;
+      height: 55px;
+      justify-content: center;
+      align-items: center;
+      font-family: var(--medium-font);
+      background: var(--main-color);
+      margin-top: 30px;
+      border-radius: 55px;
+      -webkit-border-radius: 55px;
+      -moz-border-radius: 55px;
+      -ms-border-radius: 55px;
+      -o-border-radius: 55px;
+      color: whitesmoke;
+}
+
+.hero-slide-texts h1, .hero-slide-texts p, .action-btn a{
+       opacity: 0;
+       transition: opacity 0.7s 0s, transform 0.5s 0.2s;
+       -webkit-transition: opacity 0.7s 0s, transform 0.5s 0.2s;
+       -moz-transition: opacity 0.7s 0s, transform 0.5s 0.2s;
+       -ms-transition: opacity 0.7s 0s, transform 0.5s 0.2s;
+       -o-transition: opacity 0.7s 0s, transform 0.5s 0.2s;
+       transform: translate3d(0, 50%, 0);
+       -webkit-transform: translate3d(0, 50%, 0);
+       -moz-transform: translate3d(0, 50%, 0);
+       -ms-transform: translate3d(0, 50%, 0);
+       -o-transform: translate3d(0, 50%, 0);
+}
+.hero-slide-moja.active h1,
+.hero-slide-moja.active p,
+.hero-slide-moja.active .action-btn a{
+       opacity: 1;
+       transition-delay: 1s;
+       transform: translate3d(0, 0, 0);
+       -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+       -ms-transform: translate3d(0, 0, 0);
+       -o-transform: translate3d(0, 0, 0);
 }

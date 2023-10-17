@@ -1,12 +1,13 @@
 import { useEffect, useRef } from "react"
 import { Slider } from "../utils/Slider"
 import { heroStuff } from "../data/hero"
+import { NavLink } from "react-router-dom"
+import gsap from "gsap"
 const HeroSection = () => {
      const sliderRef = useRef()
      
      useEffect(() => {
-        const sliderInit = new Slider(sliderRef.current);
-       
+        new Slider(sliderRef.current);
      }, [])
   
   return (
@@ -16,9 +17,12 @@ const HeroSection = () => {
                            <div className="inner-row">
                                       <div className="hero-slide-texts">
                                                   <div className="slide-texts-inner">
-                                                             <h3>{item.semi_title}</h3>
                                                              <h1>{item.title}</h1>
                                                              <p>{item.description}</p>
+
+                                                             <div className="action-btn">
+                                                                     <NavLink to={'/'}>Get Involved</NavLink>
+                                                             </div>
                                                   </div>
                                       </div>
                            </div>
