@@ -5,7 +5,7 @@ export class Slider{
               this.totalSlides = this.slides.length;
               this.autoPlay = true;
               this.current = 0;
-              this.transitionTime = 5000;
+              this.transitionTime = 8000;
               this.indexElements = []
 
               for(let i = 0; i < this.totalSlides; i++){

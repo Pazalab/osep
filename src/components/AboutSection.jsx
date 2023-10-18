@@ -2,6 +2,7 @@ import reforestation from "../assets/reforestation.png"
 import env_analysis from "../assets/env-research.png"
 import conservation from "../assets/forest-conservation.png"
 import global from "../assets/global.png"
+import { NavLink } from "react-router-dom"
 
 const data = [
     {
@@ -36,6 +37,28 @@ const AboutSection = () => {
                                                   <h3>{item.title}</h3>
                                       </div>
                                         )}
+                         </div>
+
+                         <div className="about-intro-part">
+                                    <h3>Who we are</h3>
+                                    <div className="about-intro-row">
+                                                  <div className="about-intro-column">
+                                                           <h1>More People, <br /> More Impact</h1>
+                                                  </div>
+                                                  <div className="about-intro-column">
+                                                          <p>Osep Kenya is a reputable CBO founded on a passion and commitment to create a sustainable future for our planet. We believe that through collective action, we can make a positive impact on the environment and create a more just and equitable world for all.</p>
+                                                  </div>
+                                                  <div className="about-intro-column">
+                                                          <NavLink to={'/about-us'}>Read More
+                                                                       <div className="tree-bubble">
+                                                                                  <span></span>
+                                                                                  <span></span>
+                                                                                  <span></span>
+                                                                                  <span></span>
+                                                                       </div>
+                                                          </NavLink>
+                                                  </div>
+                                    </div>
                          </div>
             </div>
     </div>
