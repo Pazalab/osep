@@ -25,12 +25,12 @@
        background-position: center;
 }
 .hero-slide-moja:nth-child(2){
-    background: url('../assets/hero2.jpg');
+    background: linear-gradient(to right, rgba(0, 30, 7, 0.6), transparent), url('../assets/hero2.jpg');
     background-size: cover;
     background-position: center;
 }
 .hero-slide-moja:nth-child(3){
-    background: url('../assets/hero3.jpg');
+    background:linear-gradient(to right, rgba(0, 30, 7, 0.6), transparent),  url('../assets/hero3.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -106,4 +106,31 @@
        -moz-transform: translate3d(0, 0, 0);
        -ms-transform: translate3d(0, 0, 0);
        -o-transform: translate3d(0, 0, 0);
+}
+
+/* About Section Styles */
+.about-section{
+    padding: 120px 0;
+    background-color: white;
+}
+
+.pillars-section{
+       display: grid;
+       width: 1000px;
+       margin: auto;
+       grid-template-columns: repeat(4, 1fr);
+       gap: 30px;
+}
+.pillar-moja{
+       text-align: center;
+       padding: 0 20px;
+}
+.pillar-moja img{
+      width: 60px;
+      height: 60px;
+}
+.pillar-moja h3{
+    font-size: 17px;
+    color: rgb(66, 83, 75);
+    line-height: 30px;
 }

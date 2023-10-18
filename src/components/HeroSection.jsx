@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react"
 import { Slider } from "../utils/Slider"
 import { heroStuff } from "../data/hero"
 import { NavLink } from "react-router-dom"
-import gsap from "gsap"
+
 const HeroSection = () => {
      const sliderRef = useRef()
      
