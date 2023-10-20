@@ -110,7 +110,7 @@
 
 /* About Section Styles */
 .about-section{
-    padding: 120px 0;
+    padding: 120px 0 90px 0;
     background-color: white;
 }
 
@@ -292,4 +292,71 @@
 .about-more-texts p{
       font-size: 17px;
       line-height: 30px;
+}
+
+/* Achievements Styles */
+.achievements-section{
+       background: white;
+       padding-bottom: 100px;
+}
+
+.achievements-content{
+       width: 1100px;
+       margin: auto;
+       padding: 100px 60px;
+       background: linear-gradient(to right, rgb(0, 113, 49),rgb(27, 156, 83), rgb(34, 122, 72));
+       border-radius: 30px;
+       -webkit-border-radius: 30px;
+       -moz-border-radius: 30px;
+       -ms-border-radius: 30px;
+       -o-border-radius: 30px;
+       text-align: center;
+       position: relative;
+}
+.achievements-content .intro{
+       width: 90%;
+       margin: 0px auto 30px auto;
+}
+.achievements-content .intro h5{
+         width: 200px;
+         height: 40px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin: auto;
+         background: rgba(255, 238, 163, 0.603);
+         border-radius: 40px;
+         -webkit-border-radius: 40px;
+         -moz-border-radius: 40px;
+         -ms-border-radius: 40px;
+         -o-border-radius: 40px;
+         margin-bottom: 20px;
+         color: whitesmoke;;
+         font-family: var(--light-font);
+}
+.achievements-content .intro h1{
+       font-size: 50px;
+       font-family: var(--bold-font);
+       font-weight: 600;
+       color: whitesmoke;
+}
+
+.achievements-content .numbers-row{
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       width: 90%;
+       gap: 50px;
+       margin: auto;
+       color: whitesmoke;
+}
+.counter-moja h1{
+        font-size: 75px;
+        font-weight: 500;
+        font-family: var(--bold-font);
+}
+
+/* What We Do Styles */
+.what-we-do{
+    background: #182822;
+    padding: 100px 0;
 }
