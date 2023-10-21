@@ -165,7 +165,7 @@
       font-size: 14px;
       padding: 12px 30px;
       border-radius: 30px;
-      background: rgba(204, 244, 204, 0.493);
+      background: rgba(177, 244, 202, 0.4);
       display: inline-block;
       color: var(--dark-color);
       margin-bottom: 20px;
@@ -324,7 +324,7 @@
          align-items: center;
          justify-content: center;
          margin: auto;
-         background: rgba(255, 238, 163, 0.603);
+         background: rgba(255, 238, 163, 0.4);
          border-radius: 40px;
          -webkit-border-radius: 40px;
          -moz-border-radius: 40px;
@@ -357,6 +357,100 @@
 
 /* What We Do Styles */
 .what-we-do{
-    background: #182822;
+    background: var(--dark-color);
     padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.what-we-do-content .intro{
+         width: 800px;
+}
+.what-we-do-content h4{
+       width: 150px;
+         height: 40px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background: rgba(177, 244, 202, 0.493);
+         border-radius: 40px;
+         -webkit-border-radius: 40px;
+         -moz-border-radius: 40px;
+         -ms-border-radius: 40px;
+         -o-border-radius: 40px;
+         margin-bottom: 20px;
+         color: whitesmoke;;
+         font-family: var(--light-font);
+         font-size: 14px;
+}
+
+.what-we-do-content h1{
+        font-size: 65px;
+        font-family: var(--bold-font);
+        font-weight: 600;
+        color: whitesmoke;;
+        margin-bottom: 20px;
+}
+.what-we-do-content .intro p{
+        font-size: 18px;
+        color: whitesmoke;
+        line-height: 32px;
+}
+
+.what-we-do-content .leafy-abstract{
+         width: 400px;
+         position: absolute;
+         right: 100px;
+         top: -150px;
+         transform: rotate(-40deg);
+         -webkit-transform: rotate(-40deg);
+         -moz-transform: rotate(-40deg);
+         -ms-transform: rotate(-40deg);
+         -o-transform: rotate(-40deg);
+}
+
+.what-we-do-row{
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-content: center;
+}
+
+.what-we-do-row .project-moja{
+        width: 400px;
+        flex-shrink: 0;
+        background:rgba(0, 164, 85, 0.1);
+        padding: 40px;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        color: rgb(236, 236, 236);
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+}
+.what-we-do-row .project-moja:hover{
+        background: rgba(20, 211, 118, 0.15);
+}
+.project-moja h3{
+         font-size: 24px;
+         font-weight: 400;
+         margin-bottom: 10px;;
+}
+.project-moja p{
+        line-height: 25px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-family: var(--light-font);
+}
+.project-moja a{
+       color: white;
+       font-family: var(--medium-font);
+       color: var(--main-color)
 }
