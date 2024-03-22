@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom"
 import leafy from "../assets/leafy.png"
+import Process from "./Process"
 const WhatWeDo = () => {
   return (
     <div className="what-we-do">
@@ -41,6 +42,8 @@ const WhatWeDo = () => {
                                                             <NavLink to={'/'}>Explore More</NavLink>
                                                </div>
                                    </div>
+
+                                   <Process />
                        </div>
               </div>
     </div>

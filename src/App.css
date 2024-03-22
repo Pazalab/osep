@@ -17,7 +17,7 @@
 }
 
 body{
-      background: rgb(249, 255, 249);
+      background: rgb(252, 255, 252);
       font-family: var(--main-font);
 }
 ul{
@@ -183,3 +183,11 @@ header .topbar{
       border: none;
 }
 
+.footer-content{
+       padding: 100px 0;
+       display: grid;
+       grid-template-columns: 1fr 1.5fr;
+}
+.footer-content .footer-logo{
+       width: 180px;
+}
